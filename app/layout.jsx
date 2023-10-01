@@ -3,6 +3,7 @@ import { Rubik } from "next/font/google";
 
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <main className="min-h-[83.65vh] max-w-7xl py-8 mx-auto">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
